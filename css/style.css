@@ -1,0 +1,111 @@
+/*Set the background for the whole webpage*/
+html {
+  background: url("../images/background.png") left top repeat;
+}
+
+/*Style for the body of the webpage*/
+body {
+    background-color: #A3C9F2;
+    min-width: 200px;
+    max-width: 1000px;
+    margin: 40px auto 40px auto;
+    width: 65%;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    padding: 20px;
+    box-shadow: 0 0 25px 10px rgba(0,0,0,0.75);
+}
+
+/*Add css animation*/
+@keyframes animated{
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+/*Styling for the header of the webpage that contains my name*/
+.header {
+    background-image: url("../images/header image.jpg");
+    text-align: center;
+    border-style: solid;
+    margin: 20px;
+    animation: animated 40s linear infinite;
+}
+
+/*Style all the headers for the subsection of webpage*/
+h2{
+    text-align: center;
+}
+
+/*Styling for the sections that talks about me*/
+#information{
+    margin: 20px 20px 0px 20px;
+    border-bottom: 1px solid #000000;
+    font-size: 1.2em;
+}
+
+/*Style for the embedded video*/
+iframe{
+    width: 40%;
+    height: 75%;
+    float: right;
+}
+
+/*Styling for subsection that list all of my courses*/
+.courses {
+    margin: 20px 20px 0px 20px;
+    border-bottom: 1px solid #000000;
+}
+
+/*Styling for underordered list used in courses*/
+ul{
+    margin-left: -40px;
+    font-size: 1.2em;
+    list-style-type: none;
+}
+
+/*Styling for subsection that contains all of my assignments*/
+.assignment{
+    margin: 20px 20px 0px 20px;
+}
+
+/*Styling for the tables for assignments*/
+.assignment table {
+    margin-left:auto; 
+    margin-right:auto;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #000000;
+    width: 100%;
+    display: block;
+    align-items: center;
+}
+
+/*Styling for table header used in assignment subsection*/
+.assignment th{
+    text-align: left;
+    width: 90px;
+}
+
+/*Style the captions for table with contains the assigment name*/
+.assignment caption{
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/*Style the table cells*/
+.assignment td{
+    font-size: 1.2em;
+}
+
+/*Style the heading cells for the tables*/
+.assignment th{
+    vertical-align: top;
+    width: 5em;
+}
+
+/*Style the footer*/
+footer{
+    text-align: center;
+    margin: 20px 20px 0px 20px;
+}
