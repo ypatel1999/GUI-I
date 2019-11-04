@@ -1,0 +1,50 @@
+<!--
+  Author: Yash Patel
+  Email: yash_patel2@student.uml.edu
+  File: index.html
+ 
+  Description:
+   Assignmnet #6 -- Creating an Interactive Dynamic Table
+   This html file creates a webpage that have two forms that will
+   take numerical values to generate a multiplication table. 
+   Once the form is submitted, in runs a javascript function.
+-->
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 6 -- Creating an Interactive Dynamic Table </title> 
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+  </head>
+  
+  <body>
+    <h1> Multiplication Table </h1>
+    <h5> Order does not matter and max value range of 15. </h5> <!-- Instructions for the user -->
+    <form id="form" onsubmit = "validate(); return false;"> <!-- run the javascript function when the user presses submit -->
+      <div id="left">
+          <fieldset>
+            <legend>Enter horizontal axis bound.</legend>
+            <input type="number" id="multiplier_1" required>
+            <br />
+            <input type="number" id="multiplier_2" required>
+          </fieldset>
+       </div>
+          
+      <div id="right">
+          <fieldset>
+            <legend>Enter veritcal axis bound. </legend>
+            <input type="number" id="multiplicand_1" required>
+            <br />
+            <input type="number" id="multiplicand_2" required>
+          </fieldset>
+       </div>
+      
+      <input type="submit" value="Create Table">
+    </form>
+    
+    <div id="table"> <!-- Create a area for the javascript function to place the html table -->
+    </div>
+  </body>
+</html>
