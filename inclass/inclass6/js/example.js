@@ -20,4 +20,7 @@ for(var i = 0; i < element_list.length; i++)
 }
 
 // ADD NUMBER OF ITEMS IN THE LIST TO THE HEADING
-document.getElementsByTagName('h2')[0].innerText = "Buy Groceries: " + element_list.length;
+var newSpan = document.createElement('span');
+var textNode = document.createTextNode(element_list.length)
+newSpan.appendChild(textNode);
+document.getElementsByTagName('h2')[0].appendChild(newSpan);
