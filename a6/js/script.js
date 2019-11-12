@@ -99,7 +99,7 @@ function validate()
         multiplicand_Max = [multiplicand_Min, multiplicand_Min = multiplicand_Max][0];
     }
     
-    if(Math.abs(multipler_Max-multipler_Min) >= 50 || Math.abs(multiplicand_Max-multiplicand_Min) >= 50) //check if the range of values if greater than or equal to 15
+    if(Math.abs(multipler_Max-multipler_Min) >= 50 || Math.abs(multiplicand_Max-multiplicand_Min) >= 50) //check if the range of values if greater than or equal to 50
     {
         alert("Range is too big");
         return;
