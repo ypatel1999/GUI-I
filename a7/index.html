@@ -1,0 +1,55 @@
+<!--
+  Author: Yash Patel
+  Email: yash_patel2@student.uml.edu
+  File: index.html
+ 
+  Description:
+   Assignmnet #7 -- Using the jQuery Validation Plugin with Your Dynamic Table
+   This html file creates a webpage that have two forms that will
+   take numerical values to generate a multiplication table. 
+   Once the form is submitted, in runs a javascript function that
+   verifys the input and creates a multiplication table.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 7 -- Using the jQuery Validation Plugin with Your Dynamic Table </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/validation.js"></script>
+   </head>
+   <body>
+     <div class="container">
+       <h1>Multiplication Table</h1>
+       <h5> Input integers below for the parameters of the table </h5> <!-- Instructions for the user -->
+
+       <form id="form">
+         <div id="left">
+           <fieldset>
+             <legend>Enter horizontal axis bound. </legend>
+             <input id="multiplier_1" type="text" name="multiplier_1" placeholder="Lower bound: "><br>
+             <input id="multiplier_2" type="text" name="multiplier_2" placeholder="Upper bound: ">
+           </fieldset>
+         </div>
+
+         <div id="right">
+           <fieldset>
+             <legend>Enter veritcal axis bound. </legend>
+             <input id="multiplicand_1" type="text" name="multiplicand_1" placeholder="Lower bound: "><br>
+             <input id="multiplicand_2" type="text" name="multiplicand_2" placeholder="Upper bound: "><br>
+           </fieldset>
+          </div>
+        
+          <input type="submit" value="Create Table">
+        </form>
+
+        <div id="table"> <!-- Create an area for the javascript function to place the html table -->
+        </div>
+
+        <script type="text/javascript" src="js/script.js"></script>
+      </div> <!-- end container div-->
+    </body>
+</html>
