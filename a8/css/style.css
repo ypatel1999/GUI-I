@@ -1,0 +1,126 @@
+/*
+ * Author: Yash Patel
+ * Email: yash_patel2@student.uml.edu
+ * File: style.css
+ *
+ * Description:
+ *  Assignment #8 -- Using the jQuery UI Slider and Tab Widgets
+ *  This css style is used to to style a webpage that takes 
+ *  in 4 values and creates a new tab with a multiplcation table. The table
+ *  will have a checkered pattern.
+ */
+ 
+html{
+    background-color: #000000;
+    height:100%;
+}
+
+body {
+    background-color: #ffffff;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+    color: #333333;
+    margin: 0 auto;
+    max-width: 960px;
+    min-height: 100%;
+    min-width: 700px;
+    padding: 20px;
+    width: 65%;
+}
+
+h1, h5{
+    text-align:center;
+}
+
+
+/*CSS Styling for the input fields */
+input[type=button], input[type=submit] {
+    text-align: center;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px;
+}
+
+input[type=number] {
+    margin: 10px 5px 5px 10px;
+    padding: 5px 5px;
+}
+
+/* Styling for the multiplier form */
+#left {
+    float:left;
+    width:50%;
+}
+
+/* Styling for the multiplicand form */
+#right {
+    float:right;
+    width:50%;
+}
+
+#buttons{
+    margin: 10px 0px 10px 0px;
+}
+
+#table {
+    border-collapse: collapse;
+    max-height: 500px;
+    outline: 1px solid #000000;
+    overflow: auto;
+    text-align: center;
+    width: 100%;
+}
+
+#table tr:nth-child(even) td:nth-child(odd),
+#table tr:nth-child(odd) td:nth-child(even) {
+    /* Color every other td cell */
+    background-color: #ff0000 ; /* Red */
+}
+
+#table th {
+    background-color: #000080; /* Navy Blue */
+    color: #ffffff; 
+}
+
+#table th, #table td {
+    border: 2px solid #ffffff;
+    padding: 0.8em;
+}
+
+label.error {
+    color: red;
+    padding:1px 5px 0px 5px;
+}
+
+/* CSS for all tab related elements */
+#tabs {
+    border: 1px solid #000000;
+    display: flex;
+    flex-direction: column;
+}
+
+#tabs .ui-tabs-nav {
+    border-radius: 0;
+    background-image: none;
+    background-color: #ffffff;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    font-size: 0.8em;
+}
+
+#tabs .ui-tabs-tab {
+    vertical-align: bottom;
+    border-bottom: 1px solid #000000;
+}
+
+#tabs .ui-tabs-active {
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+
+#tabs .ui-tabs-panel {
+    height: 500px;
+    padding: 5px;
+    overflow: auto;
+}

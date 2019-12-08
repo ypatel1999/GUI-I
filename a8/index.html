@@ -1,0 +1,102 @@
+<!--
+  Author: Yash Patel
+  Email: yash_patel2@student.uml.edu
+  File: index.html
+ 
+  Description:
+   Assignment #8 -- Using the jQuery UI Slider and Tab Widgets
+   This html file creates a webpage that have two forms that will
+   take numerical values to generate a multiplication table. 
+   Once the form is submitted, in runs a javascript function that
+   verifys the input and creates a multiplication table.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 8 -- Using the jQuery UI Slider and Tab Widgets </title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" defer></script>
+    <script src="js/validation.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+  
+       <h1> Multiplication Table Generator </h1>
+       <h5> Input or use the slider to select the attributes 
+            of the table to be created. </h5>
+            
+       <form id="form">
+       
+         <!-- Multipler Form -->
+         <div id="left">
+           <fieldset>
+             <legend>Enter horizontal axis bound. </legend>
+             
+             <div>
+                 <label for="multiplier_1">Minimum</label>
+                 <input type="number" id="multiplier_1" name="multiplier_1" 
+                    value="0" min="-100" max="100" autocomplete="off">
+                    <div id="multiplier_1Slider" class="slider"></div> <!-- Area to insert a slider -->
+             </div>
+             
+             <div>
+                 <label for="multiplier_2">Maximum</label>
+                 <input type="number" id="multiplier_2" name="multiplier_2" 
+                    value="0" min="-100" max="100" autocomplete="off">
+                    <div id="multiplier_2Slider" class="slider"></div>
+             </div>
+                
+           </fieldset>
+         </div>
+
+         <!-- Multiplicand Form -->
+         <div id="right">
+           <fieldset>
+             <legend>Enter veritcal axis bound. </legend>
+             
+             <div>
+                 <label for="multiplicand_1">Minimum</label>
+                 <input type="number" id="multiplicand_1" name="multiplicand_1" 
+                    value="0" min="-100" max="100" autocomplete="off">
+                    <div id="multiplicand_1Slider" class="slider"></div> 
+             </div>
+             
+             <div>
+                 <label for="multiplicand_2">Maximum</label>
+                 <input type="number" id="multiplicand_2" name="multiplicand_2" 
+                    value="0" min="-100" max="100" autocomplete="off">
+                    <div id="multiplicand_2Slider" class="slider"></div>
+             </div>
+           </fieldset>
+          </div>
+        
+          <div id="formFooter">
+            <input type="submit" value="Create Table">
+            <input type="checkbox" id="dynamic" name="dynamic" value="dynamic">
+            <label for="dynamic">Update tab</label>
+           </div>
+        </form>
+
+    <!-- Buttons for removing tabs -->
+    <div id="buttons">
+        <fieldset id="tabButtons" class="hidden">
+            <legend>Remove Tabs</legend>
+            <input id="removeCurrent" type="button" value="Current">
+            <input id="removeAllTabs" type="button" value="All">
+            <input id="removeTabsRight" type="button" value="To Right of Active">
+            <input id="removeTabsLeft" type="button" value="To Left of Active">
+        </fieldset>
+    </div>
+    
+    <!-- Tabbed table area -->
+    <div id="tabs" class="hidden">
+        <ul></ul>
+    </div>
+  </body>
+</html>
