@@ -1,0 +1,66 @@
+/*
+ * Author: Yash Patel
+ * Email: yash_patel2@student.uml.edu
+ * File: stylesheet.css
+ *
+ * Description:
+ *  Assignment No. 9 -- Implementing a Bit of Scrabble with Drag-and-Drop
+ *  This css style is used to style a scrabble game webpage
+ *
+ * Source:
+ * 1. https://www.w3schools.com/css/css3_buttons.asp
+ */
+ 
+.score {
+      text-align: center;
+}
+
+.score div{
+   display: inline-block;
+   margin: 0px 10px 0px 10px;
+}
+
+#board {
+    text-align: center;
+}
+
+#board img {
+    height: 80px;
+    margin: 15px;
+    width: 73.33px;
+}
+
+button {  
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.rack {
+    min-height: 200px;
+    min-width: 250px;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("../images/Board/holder.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.rack img {
+    height: 80px;
+}

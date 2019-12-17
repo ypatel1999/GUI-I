@@ -1,0 +1,55 @@
+<!--
+  Author: Yash Patel
+  Email: yash_patel2@student.uml.edu
+  File: index.html
+ 
+  Description:
+   Assignment No. 9 -- Implementing a Bit of Scrabble with Drag-and-Drop
+   This html file is used to create a webpage to play a single row of scrabble.
+   It creates location to display the board, rack, letters, and the score.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Assignment No. 9 -- Implementing a Bit of Scrabble with Drag-and-Drop </title>
+        <link rel="stylesheet" href="css/stylesheet.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    
+    <body>
+        <h1> Assignment No. 9 -- Implementing a Bit of Scrabble with Drag-and-Drop </h1>
+        <!-- Instruction for the user -->
+        <h5> Drag and drop letters on the board to see how many point they will get. <br>
+             Press submit to keep score the word place on the board and refill the
+             rack to 7 letters. <br>
+             Press the start over to refresh the letter tiles and score. </h5>
+             
+        <!-- Area to keep track of the score -->
+        <div class="score">
+            <div id="current-word"> Current Word: </div>
+            <div id="word-score"> Word Score: </div>
+            <div id="last-word"> Last Word: </div>
+            <div id="total-score"> Total Score: </div>
+            <div id="remaining"> Remaining Letters: </div>
+        </div>
+        
+        <!-- Area to display images for the board -->
+        <div id="board"></div>
+        
+        <!-- Area to display rack and the randomly selected letters -->
+        <div class="rack"></div>
+        
+        <!-- Buttons to submit word and/or restart -->
+        <div class="buttons">
+            <button id="startOver" type="button">Start Over</button>
+            <button id="submit" type="button">Submit</button>
+        </div>
+    </body>
+</html>
